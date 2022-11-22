@@ -1,0 +1,77 @@
+ #we create five sets ---****set 1 start from 1 and gap is 2 upto 31  column is 4:***----- ~~~~~ set 2 add 1st element of set 1 in col 1 and col 3 of set 1 make set 2 ~~~~~~
+# ----**** set 3  1st element of set 2 add with col 1 ansd col 2 in set 2make set 3***-----  ~~~~!!!! set 4 1st element of set 3 add with row 1 and row 3 in set 3 make set 4~~~~!!!!
+# -----$$$** set 5 1st element of set 4 add with  col 1 and col 2 in set 4 make set 5
+print('''-----****Game for guessing friend's birthday date by asking him five questions that his date is present or not in thet sets or not ***-------- ''')
+while(True):
+    choice = int(input('''
+    Enter your choice:-
+    1. Start
+    2. Quit\n
+    Press 1 for Start this Game and Press 2 for end this Game \n'''))
+
+    answer = 0
+
+    if choice == 1:
+
+        print("~~~~~Welcome in the Guessing Game for your Dearest Friend birthday date:~~~~~~\n ")
+
+        Question1 = int(input('''
+        Your First Question below in the set choose your Birthday date is present or not:-
+        1   3   5   7
+        9   11  13  15
+        17  19  21  23
+        25  27  29  31
+        Press "1" for YES Press "0" for NO \n '''))
+
+        if Question1 == 1:
+            answer+=1
+        Question2 = int(input('''
+                Your Second Question below in the set choose your Birthday date is present or not:-
+                2   3   6   7
+                10  11  14  15
+                18  19  22  23
+                26  27  30  31
+                Press "1" for YES Press "0" for NO \n '''))
+
+        if Question2 == 1:
+            answer+=2
+
+        Question3 = int(input('''
+                       Your Third Question below in the set choose your Birthday date is present or not:-
+                       4   5   6   7
+                       14  13  14  15
+                       22  21  22  23
+                       30  29  30  31
+                       Press "1" for YES Press "0" for NO \n '''))
+
+        if Question3 == 1:
+            answer+=4
+
+        Question4 = int(input('''
+                               Your Fourth Question below in the set choose your Birthday date is present or not:-
+                               8   9   10  11
+                               14  13  14  15
+                               26  25  26  27
+                               30  29  30  31
+                               Press "1" for YES Press "0" for NO \n '''))
+
+        if Question4 == 1:
+            answer+=8
+
+        Question5 = int(input('''
+                                       Your Fivth Question below in the set choose your Birthday date is present or not:-
+                                       16  17  18  19
+                                       22  21  22  23
+                                       26  25  26  27
+                                       30  29  30  31
+                                       Press "1" for YES Press "0" for NO \n '''))
+
+        if Question5 == 1:
+            answer+=16
+        print("Your Birthday date is: ",answer)
+
+    else:
+        break
+print("Thanks for Visting this Game\n")
+
+
